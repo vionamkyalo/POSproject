@@ -1,7 +1,6 @@
 from pydantic import BaseModel, Field
 from typing import Optional
 
-# 1. Base fields matching your assignment data model
 class ProductBase(BaseModel):
     name: str = Field(..., examples=["Pen"])
     brand: str = Field(..., examples=["Bic"])
